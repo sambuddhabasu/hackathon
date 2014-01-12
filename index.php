@@ -93,7 +93,7 @@
           <img class="img-circle" src="images/img1.jpg" alt="Generic placeholder image" width="300px">
           <h2>Problems</h2>
           <p>Search for problems with their problem id and difficulty.</p>
-          <p><a class="btn btn-default" href="codes_list.php?pcode=fire&difficulty=easy" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="problem_list.php" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="images/img2.png" alt="Generic placeholder image" width="300px">

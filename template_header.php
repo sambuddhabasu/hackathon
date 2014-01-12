@@ -13,7 +13,7 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li><a href="codes_list.php?pcode=fire&difficulty=easy">Problems</a></li>
+        <li><a href="problem_list.php">Problems</a></li>
         <li><a href="leaderboard.php">Leaderboard</a></li>
         <li><a href="cli.php">SweetSurprise!</a></li>
         <li class="dropdown">
