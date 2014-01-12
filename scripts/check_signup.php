@@ -41,12 +41,12 @@ if($error == false) {
 		mysql_query("INSERT INTO temporary_users VALUES ('$md5sum', '$first_name', '$last_name', '$email', '$country', '$handle', '$password')");
 		$to = $email;
 		$subject = "CodeRating Registration";
-		$message = "Your registration with CodeRating is successful! To start using your account, click on the link given http://127.0.0.1/scripts/confirm_registration.php?code=" . $md5sum;
+		$message = "Your registration with CodeRating is successful! To start using your account, click on the link given http://" . $_SERVER['SERVER_ADDR'] . "/scripts/confirm_registration.php?code=" . $md5sum;
 		$headers = "From: coderating3@gmail.com";
 		mail($to, $subject, $message, $headers);
 		echo "<script type=\"text/javascript\">
 				alert('Account created.');
-				window.location.href='index.php';
+				window.location.href='../index.php';
 				</script>";
 	}
 }

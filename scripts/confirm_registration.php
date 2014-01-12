@@ -25,7 +25,7 @@ if($existCount == 1) {
 	mysql_query("DELETE FROM temporary_users WHERE md5sum='$md5sum'");
 	echo "<script type=\"text/javascript\">
 	alert('You are ready to use your account now!');
-	window.location.href='../login.php';
+	window.location.href='../index.php';
 	</script>";
 }
 else {

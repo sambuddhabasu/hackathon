@@ -96,6 +96,7 @@ else if(isset($_GET['hardneg'])) {
 <?php
 $url = 'http://www.codechef.com/problems/' . $pcode;
 $proxy = 'proxy.iiit.ac.in:8080';
+//$proxy = '192.168.2.101:8080';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,$url);
 curl_setopt($ch, CURLOPT_PROXY, $proxy);
@@ -108,7 +109,7 @@ $res = preg_match("/<title>(.*)<\/title>/siU", $content, $title_matches);
 $start_pos = strpos($content, '<div class="primary-colum-width-left">');
 $end_pos = strpos($content, '<table cellspacing="0" cellpadding="0" align="left">');
 echo substr($content, $start_pos+302, $end_pos - $start_pos - 300);
-$problem_name = substr($title_matches[1], 0, -10); 
+$problem_name = substr($title_matches[1], 0, -10);
 ?>
 <h2>Problem Name - <?php echo $problem_name; ?></h2>
 <form method="post" action="scripts/check_upload.php">

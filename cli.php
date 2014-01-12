@@ -44,6 +44,10 @@ function process(command)
 		$("body").append("<br>EXIT - Exit this terminal and go back to main site");
 		$("body").append(newline);
 	}
+	else if(cmd=="iiit") {
+		$("body").append("<br>Light Hai!!");
+		$("body").append(newline);
+	}
 	else if(cmd=="top") {
 		$("body").append("<br>The top contributor is: <?php echo $_SESSION['top_handle']; ?>");
 		$("body").append(newline);
